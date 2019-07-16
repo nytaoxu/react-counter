@@ -1,10 +1,10 @@
-import React, { Component } from "react";
+import React from "react";
 
-const Navbar = props => {
+const Navbar = ({ total }) => {
   return (
     <nav className="navbar navbar-light bg-light">
       <a className="navbar-brand" href="#">
-        <span>You have {props.total} items in your cart.</span>
+        <span>You have {total} items in your cart.</span>
       </a>
     </nav>
   );
